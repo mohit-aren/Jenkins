@@ -8,7 +8,9 @@ pipeline {
           // Just print a Hello, Pipeline to the console
           echo "Hello, Pipeline!"
           // Compile a Java file. This requires JDKconfiguration from Jenkins
+          sh "ls -ltr"
           sh "javac ./HelloWorld.java"
+          sh "ls -ltr"
           // Execute the compiled Java binary called HelloWorld. This requires JDK configuration from Jenkins
           sh "java HelloWorld"
           // List the files in current directory path by executing a default shell command
