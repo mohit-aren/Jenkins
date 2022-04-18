@@ -12,7 +12,6 @@ pipeline {
 
           java HelloWorld
 
-          //sh "ls -ltr"
        }
    }
    // And next stages if you want to define further...
