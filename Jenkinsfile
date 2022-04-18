@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('build') {
             steps {
-                echo "Hello World!"
+                java hello.java
             }
         }
     }
