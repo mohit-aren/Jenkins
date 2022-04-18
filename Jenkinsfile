@@ -8,7 +8,7 @@ pipeline {
           // Just print a Hello, Pipeline to the console
           echo "Hello, Pipeline!"
           // Compile a Java file. This requires JDKconfiguration from Jenkins
-          javac ./HelloWorld.java
+          javac HelloWorld.java
 
           java HelloWorld
 
