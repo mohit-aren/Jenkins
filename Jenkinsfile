@@ -10,6 +10,7 @@ pipeline {
           // Compile a Java file. This requires JDKconfiguration from Jenkins
           bat "javac HelloWorld.java"
        }
+    }
     stage("Execute") {
        steps {
           // Just print a Hello, Pipeline to the console
