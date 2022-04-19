@@ -8,7 +8,14 @@ pipeline {
           // Just print a Hello, Pipeline to the console
           echo "Hello, Pipeline!"
           // Compile a Java file. This requires JDKconfiguration from Jenkins
-          sh "python sample.py"
+          bat "javac HelloWorld.java"
+       }
+    stage("Execute") {
+       steps {
+          // Just print a Hello, Pipeline to the console
+          echo "Hello, Pipeline!"
+          // Compile a Java file. This requires JDKconfiguration from Jenkins
+          bat "java HelloWorld"
        }
    }
  } // End of stages
